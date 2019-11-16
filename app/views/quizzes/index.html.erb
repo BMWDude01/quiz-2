@@ -1,0 +1,8 @@
+<h1> Welcome to Quiz 2</h1>
+<%= link_to 'Create Quiz', new_quiz_path %>
+<hr />
+
+<% @quizzes.each do |quiz| %>
+  <h3><%= quiz.title %></h3>
+  <p><%= quiz.prompt %></p>
+<% end %>

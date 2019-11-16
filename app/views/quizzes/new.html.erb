@@ -1,0 +1,7 @@
+<h1> Create a Quiz</h1>
+<%= simple_form_for @quiz do |f| %>
+  <%= f.input :title %>
+  <%= f.input :prompt %>
+  <br />
+  <%= f.submit 'Create' %>
+<% end %>
